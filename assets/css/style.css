@@ -138,3 +138,84 @@ h1 img {
   float: right;
   text-indent: 0;
 }
+
+/* BANNER */
+
+.banner {
+  padding: 312px 0;
+  position: relative;
+  background-image: url(../images/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 312px;
+}
+
+.banner-content {
+  width: 38.5%;
+  position: absolute;
+  top: 152px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.banner-content h2 {
+  color: #fff;
+  font-size: 103px;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+}
+
+.banner-content h2::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  display: block;
+  background-color: #00a8f5;
+}
+
+.banner-content span {
+  margin: 30px 0 50px 0;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.banner-content button {
+  padding: 14px 26px 13px 26px;
+  border: 1px solid #00a8f5;
+  background-color: transparent;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all .7s;
+}
+
+.banner-content button:hover {
+  border-color: #fff;
+  color: #00a8f5;
+}
+
+.banner .wrapper > span {
+  display: block;
+  cursor: pointer;
+  text-indent: -999px;
+}
+
+.banner .wrapper > span::before {
+  content: '\f107';
+  position: absolute;
+  bottom: 62px;
+  left: 50%;
+  float: right;
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-size: 25px;
+  font-weight: 900;
+  text-indent: 0;
+  transform: translateX(-50%);
+}
