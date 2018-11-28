@@ -244,3 +244,61 @@ h1 img {
   letter-spacing: 0.2px;
   line-height: 1.5;
 }
+
+/* DEVICE */
+.device {
+  padding: 52px 0 52px;
+  background-color: #fff;
+}
+
+.device li {
+  width: 31.38%;
+  margin-right: calc(2.925% - 5px);
+  display: inline-block;
+  text-align: center;
+}
+
+.device li:last-child {
+  margin-right: 0;
+}
+
+.device li a {
+  text-indent: -9999px;
+}
+
+.device li a::before {
+  width: 27.93%;
+  padding: 20px 28px;
+  float: right;
+  background: linear-gradient(to right,#00BDFB 50%, #3AC5FB 50%);
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-size: 35px;
+  font-weight: 900;
+  text-indent: 0;
+}
+
+.device li:nth-child(1) a::before { content: '\f3cd'; }
+
+.device li:nth-child(2) a::before {
+  content: '\f3fe';
+  font-family: "Font Awesome 5 Brands";
+}
+
+.device li:nth-child(3) a::before { content: '\f0a1'; }
+
+.device li h4 {
+  margin-top: 22px;
+  color: #4f5a69;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.device li span {
+  margin-top: 14px;
+  display: block;
+  color: #c8c8c8;
+  font-size: 13px;
+  font-weight: 700;
+}
