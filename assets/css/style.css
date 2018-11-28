@@ -345,10 +345,19 @@ h1 img {
 .overlay-links {
   position: absolute;
   width: 100%;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 154, 225, .5);
+}
+
+.overlay-links > ul {
+  position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .showcase-links li { display: inline-block; }
@@ -376,5 +385,78 @@ h1 img {
 .showcase-links li:last-child { margin-right: 0; }
 
 /* overlay */
-.showcase .wrapper > ul > li:hover .overlay-links { opacity: 1; }
-.showcase .wrapper > ul > li:hover { opacity: 0.5; }
+.showcase .wrapper > ul > li:hover .overlay-links { display: block; }
+
+
+/* STAY WITH US SECTION */
+
+.connect { position: relative; }
+
+.connect .wrapper {
+  width: 34.83%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.connect h3 {
+  color: #fefefe  ;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.connect span {
+  margin-top: 17px;
+  display: block;
+  color: #8f8f90;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.connect .wrapper input[type=text],
+.connect .wrapper input[type=email],
+.connect .wrapper textarea {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #767a7f;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.connect .wrapper textarea {
+  height: 130px;
+  resize: none;
+}
+
+.connect .wrapper input[type=checkbox] {
+  margin-top: 22px;
+  font-size: 16px;
+  color: #dcdde0;
+}
+
+.connect .wrapper input[type=submit] {
+  width: 25.66%;
+  padding: 14px 26px 13px 26px;
+  border: 2px solid #00a8f5;
+  margin-top: 10px;
+  float: right;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all .7s;
+}
+
+.connect .wrapper input[type=submit]:hover {
+  border-color: #fff;
+  color: #00a8f5;
+}
