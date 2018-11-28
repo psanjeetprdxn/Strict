@@ -460,3 +460,50 @@ h1 img {
   border-color: #fff;
   color: #00a8f5;
 }
+
+/* FOOTER */
+
+footer {
+  background-color: #f5f9f9;
+}
+
+footer span {
+  color: #Adaeae;
+  font-size: 13px;
+}
+
+footer ul {
+  float: right;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer li a {
+  text-indent: -9999px;
+}
+
+footer li:nth-child(1) a::before {
+  content: '\f39e';
+}
+footer li:nth-child(2) a::before {
+  content: '\f099';
+}
+footer li:nth-child(3) a::before {
+  content: '\f1a0';
+}
+footer li:nth-child(4) a::before {
+  content: '\f0e1';
+}
+
+footer li a::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 12px;
+  color: #fff;
+  text-indent: 0;
+  float: right;
+  padding: 12px;
+  background-color: #00a8f5;
+}
